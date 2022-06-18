@@ -24,7 +24,6 @@ import Foot from './Foot'
         await fetch('https://pharmacymanagementwebapiservice20220617105735.azurewebsites.net/api/Auth/Login',{
             method:'POST',
             headers:{'Content-Type':'application/json'},
-            withCredentials: true,
             credentials:'include',
             body:JSON.stringify({
                 email,

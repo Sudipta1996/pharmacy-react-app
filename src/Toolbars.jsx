@@ -30,7 +30,7 @@ function SimpleAppBar(props) {
           await fetch('https://pharmacymanagementwebapiservice20220617105735.azurewebsites.net/api/Auth/logout',{
                   method:'POST',
                   headers:{'Content-Type':'application/json'},
-                  credentials:'include',
+                  
               });
               setRedirect(true);
               Cookies.remove('jwt');

@@ -25,7 +25,7 @@ const Verify=(props)=>{
       useEffect(() =>{
         (
         async () =>{
-          const response =  await fetch('https://pharmacymanagementwebapiservice20220617105735.azurewebsites.net/api/User',{
+          const response =  await fetch('https://pharmacymanagementwebapiservice20220617105735.azurewebsites.net/api/Auth/User',{
                     method:'GET',
                          headers:{'Content-Type':'application/json'},
                         credentials:'include',

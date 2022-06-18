@@ -26,7 +26,7 @@ const Orders=(props)=>{
       });
   
      useEffect(()=>{
-        axios.get("http://localhost:12831/api/Drug/"+props.match.params.drugId).then(res=>{
+        axios.get("https://pharmacymanagementwebapiservice20220617105735.azurewebsites.net/api/Drug/"+props.match.params.drugId).then(res=>{
               setState({
                 ...state,
                 s:{
@@ -43,7 +43,7 @@ const Orders=(props)=>{
     const submit=(e)=>{
         console.log(state.s)
         
-          axios.post("http://localhost:12831/api/Order",{
+          axios.post("https://pharmacymanagementwebapiservice20220617105735.azurewebsites.net/api/Order",{
             drugId:state.s.drugId,
             quantity:state.s.quantity,
             totalAmount:state.s.quantity*state.s.price,
